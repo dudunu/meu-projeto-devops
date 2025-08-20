@@ -1,4 +1,5 @@
-name: Continuous Deployment
+name: Go to project folder
+run: cd meu-projeto-devops
 
 on:
   push:

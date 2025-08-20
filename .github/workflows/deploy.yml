@@ -1,5 +1,5 @@
 name: Go to project folder
-run: cd meu-projeto-devops
+env: cd meu-projeto-devops
 
 on:
   push:

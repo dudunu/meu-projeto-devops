@@ -1,5 +1,11 @@
 name: Go to project folder
-env: cd meu-projeto-devops
+
+  run: npm install
+    working-directory: ./meu-projeto-devops
+  run: npm run build
+    working-directory: ./meu-projeto-devops
+  run: npm test
+    working-directory: ./meu-projeto-devops
 
 on:
   push:
@@ -28,3 +34,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
+
+          - run: npm install
